@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #007fb1;
+    --secondary-color: #f4f4f9;
+    --text-color: #333333;
+    --border-color: #cccccc;
+    --accent-color: #00b1dd;
+}
+
+/* a silly global reset && body styless */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* header portions o7 */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+/* for the navigation menuuu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* silly section containers and cardsss */
+main, section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+aside {
+    background-color: var(--secondary-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+aside pre {
+    font-family: inherit;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+/* for media present ww */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* stylign for the tablesss */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+/* for the formsssss */
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+input[type="reset"] {
+    background-color: #888888;
+}
+
+input[type="reset"]:hover {
+    background-color: #666666;
+}
+
+/* footerrrr */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
